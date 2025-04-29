@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    width: 100%;
     }
     header {
     display: flex;
@@ -105,6 +106,7 @@ body{
 footer{
     background-color: gray;
     height: 50px ;
+    width: 100%;
 }
 footer .medsos{
     text-align: center;

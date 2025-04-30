@@ -1,8 +1,8 @@
 body{
     margin: 0px;
     width: 100%;
-}
-header {
+    }
+    header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -17,25 +17,36 @@ header {
     float: left;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 30px;
     }
     nav a:hover{
-    color: black;
+    background-color: rgba(231, 231, 231, 0.74);
+    border-radius: 10px;
+    transition: 0,2s;
     }
     .login a{
-        padding: 10px 5px;
-        color: rgb(0, 0, 0);
-        float: left;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-size: 16px;
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+    float: left;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     }
-    .banner{
+    .login a:hover{
+    background-color: rgba(231, 231, 231, 0.74);
+    border-radius: 10px;
+    transition: 0,2s;   
+    }
+
+    .banner a{
     float:left;
     color: rgb(0, 0, 0);
     font-size: 34px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px ;
+    text-decoration: none;
     }
     .products{
         height: 675px;
@@ -67,28 +78,39 @@ header {
 section.products{
     justify-content: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 50px;
+    font-family: sans-serif;
+
+}
+section.products img{
+    animation: updown 2s ease-in-out infinite;
+}
+section.products .harga1{
+    font-family: 'Times New Roman', Times, serif;
 }
 section.products .card1 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card1 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 section .card1{
-    background-color: chocolate;
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card1 img{
@@ -96,13 +118,14 @@ section .card1 img{
     padding-top: 20px;
 }
 section .card2{
-    background-color: rgb(229, 175, 137);
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card2 img{
@@ -110,24 +133,26 @@ section .card2 img{
     padding-top: 20px;
 }
 section.products .card2 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card2 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 section .card3{
-    background-color: rgb(229, 175, 137);
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card3 img{
@@ -135,24 +160,26 @@ section .card3 img{
     padding-top: 20px;
 }
 section.products .card3 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card3 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 section .card4{
-    background-color: rgb(229, 175, 137);
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card4 img{
@@ -160,24 +187,26 @@ section .card4 img{
     padding-top: 20px;
 }
 section.products .card4 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card4 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 section .card5{
-    background-color: rgb(229, 175, 137);
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card5 img{
@@ -185,24 +214,26 @@ section .card5 img{
     padding-top: 20px;
 }
 section.products .card5 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card5 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 section .card6{
-    background-color: rgb(229, 175, 137);
+    background-color:rgba(20, 20, 20, 0.7);
+    color: white;
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: 375px;
     margin: 15px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
 section .card6 img{
@@ -210,15 +241,16 @@ section .card6 img{
     padding-top: 20px;
 }
 section.products .card6 a{
-    color: black;
+    background-color: #2D3A4F;
+    color: #ffffff;
     padding: 5px 20px;
     text-decoration: none;
-    box-shadow: 0px 0px 3px;
     border-radius: 20px;
+    transition: 0.3s ease, color 0.2s ease;
 }
 section.products .card6 a:hover{
     transition: 0,5s;
-    background-color: green;
+    background-color: #3C4D64;
 }
 @keyframes keren{
     0%{
@@ -271,7 +303,9 @@ footer{
     background-color: gray;
     height: 50px ;
     width: 100%;
-    position: absolute;
+    left: 0;
+    bottom: 0;
+    position: fixed;
 }
 footer .medsos{
     text-align: center;
@@ -282,3 +316,12 @@ footer .medsos a{
     font-size: 20px;
     padding: 20px 20px;
 }
+@keyframes updown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+  
